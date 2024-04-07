@@ -1,0 +1,7 @@
+torch
+tqdm
+requests
+argparse
+matplotlib
+opencv-python==4.9.0.80
+lz4==4.3.3

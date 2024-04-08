@@ -84,7 +84,7 @@ class Agent(object):
     def act(self, observation):
         observation = self.preprocess_observation(observation)
         observations = self.get_stacked_observation(observation)
-        if np.random.random() < 0.1:
+        if np.random.random() < 0.0:
             return np.random.choice(self.num_actions)
         else:
             observation_tensor = torch.tensor(np.array(observations), dtype=torch.float32).to(self.device).unsqueeze(0)
